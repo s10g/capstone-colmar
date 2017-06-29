@@ -1,0 +1,193 @@
+html {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #54414e;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Color palette found at https://coolors.co/c5ebc3-b7c8b5-a790a5-875c74-54414e 
+ * #c5ebc3 - tea green
+ * #b7c8b5 - ash grey
+ * #a790a5 - rose quartz
+ * #875c74 - raspberry glace
+ * #54414e - purple taupe
+ */
+
+
+/* Re-usable CSS */
+.padding-left-24 {
+    padding-left: 24px;
+}
+
+.padding-right-24 {
+    padding-right: 24px;
+}
+
+.basic-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.basic-flexbox-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.basic-flexbox-spacearound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basic-flexbox-spacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header and menu */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #c5ebc3;
+}
+
+header span:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #54414e;
+}
+
+header span:nth-child(3) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #a790a5;
+}
+
+nav a {
+    margin: auto 8px;
+    color: #54414e;
+    font-family: "Roboto", sans-serif;
+}
+
+nav a:hover {
+    color: #a790a5;
+}
+
+nav a:last-child {
+    padding: 3px;
+    border: 1px solid #54414e;
+    border-radius: 3px;
+}
+
+nav a:last-child:hover {
+    border: 1px solid #a790a5;
+}
+
+
+/* Banner */
+.banner {
+    background-color: #b7c8b5;
+    color: #54414e;
+}
+
+#banner img {
+    max-width: 60%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 40px;
+    flex-shrink: 3;
+}
+
+#banner div h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.start-here {
+    width: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 2rem;
+    background-color: #54414e;
+    color: #b7c8b5;
+    text-align: center;
+}
+
+
+/* Main content: about */
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #c5ebc3; 
+}
+
+.about-leftside {
+    color: #54414e;
+}
+
+#about img {
+    max-width: 60%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+/* Main content: start */
+#start {
+    background-color: #b7c8b5;
+}
+
+#start>h1 {
+    text-align: center;
+    color: #54414e;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.learning-categories {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.category {
+    min-width: 200px;
+    height: auto;
+}
+
+.category h3 {
+    margin: 16px;
+}
+
+.category span {
+    margin: 8px 16px;
+}
+
+.category p {
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
