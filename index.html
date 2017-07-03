@@ -14,14 +14,14 @@
     <header>
       <div class="flex-row padding-left-24">
         <img src="resources/img/ic-logo.svg" alt="colmar academy logo">
-        <span>COLMAR</span>
-        <span>ACADEMY</span>
+        <span class="hidden-xs">COLMAR</span>
+        <span class="hidden-xs">ACADEMY</span>
       </div>
       <nav class="flex-row padding-right-24">
-        <a href="#">On campus</a>
-        <a href="#">Online</a>
-        <a href="#">For companies</a>
-        <a href="#">Sign in</a>
+        <img src="resources/img/ic-on-campus.svg" class="menu-icon"><a href="#" class="hidden-xs">On campus</a>
+        <img src="resources/img/ic-online.svg" class="menu-icon"><a href="#" class="hidden-xs">Online</a>
+        <a href="#" class="hidden-xs">For companies</a>
+        <img src="resources/img/ic-login.svg" class="menu-icon"><a href="#" class="hidden-xs">Sign in</a>
       </nav>
     </header>
 
@@ -32,10 +32,11 @@
         <div class="col-md-7 zerofy bgimg bgimg-banner">
         </div>
         <div class="col-md-5 zerofy flex-col banner-text">
-          <div class="banner-text-2">
+          <div>
             <h1>Learn something new everyday</h1>
             <h3>Dive into subjects of your choosing and start learning.</h3>
-            <a href="#start"><div class="start-here">Start here</div></a>
+            <!--<a href="#start-learning" class="start-here">test</a><div class="start-here">Start here</div></a>-->
+            <a href="#start-learning" class="start-here">Start here</a>
           </div>
         </div>
       </div>
@@ -44,12 +45,12 @@
 
     <!-- Main content -->
     <main>
-      <div id="about">
+      <div id="about" class="sixty-left-forty-right">
         <div class="container-fluid zerofy">
           <div class="row zerofy sectionpad">
 
             <!-- Left side of page -->
-            <div class="col-md-7 zerofy">
+            <div class="col-md-7 zerofy hidden-xs">
               <div class="bgimg bgimg-information-main">
               </div>
               <div>
@@ -63,7 +64,7 @@
             <!-- Right side of the page -->
             <div class="col-md-5 zerofy flex-col">
               <aside class="flex-row">
-                <img src="resources/img/information-orientation.jpg" alt="People who are walking">
+                <img class="hidden-md hidden-xs" src="resources/img/information-orientation.jpg" alt="People who are walking">
                 <div class="flex-col">
                   <div>
                     <h3>Orientation date</h3>
@@ -74,22 +75,22 @@
               </aside>
 
               <aside class="flex-row">
-                <img src="resources/img/information-campus.jpg" alt="Orientation room">
+                <img class="hidden-md hidden-xs" src="resources/img/information-campus.jpg" alt="Orientation room">
                 <div class="flex-col">
                   <div>
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <h3>Our campus</h3>
+                    <p>Find which campus is close by you</p>
                     <a href="#">Read more</a>
                   </div>
                 </div>
               </aside>
 
               <aside class="flex-row">
-                <img src="resources/img/information-guest-lecture.jpg" alt="Guest speaker">
+                <img class="hidden-md hidden-xs" src="resources/img/information-guest-lecture.jpg" alt="Guest speaker">
                 <div class="flex-col">
                   <div>
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <h3>Our guest lecture</h3>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
                     <a href="#">Read more</a>
                   </div>
                 </div>
@@ -104,9 +105,8 @@
 
 
 
-      <div id="start">
+      <div id="start-learning">
         <div class="container-fluid zerofy">
-
           <div class="row">
             <div class="col-md-12">
               <h1>Start learning</h1>
@@ -116,48 +116,49 @@
 
           <div class="flex-row zerofy sectionpad">
             <div class="element">
-              <img src="resources/img/course-software.jpg" alt="desk with lamp">
+              <img class="hidden-xs" src="resources/img/course-software.jpg" alt="desk with lamp">
               <h3>Software engineering</h3>
-              <span>COURSES</span>
-              <p>Web development, Mobile development, iOT, APIs</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">Web development, Mobile development, iOT, APIs</p>
             </div>
 
             <div class="element">
-              <img src="resources/img/course-computer-art.jpg" alt="hand holding a mobile phone">
+              <img class="hidden-xs" src="resources/img/course-computer-art.jpg" alt="hand holding a mobile phone">
               <h3>Computer art</h3>
-              <span>COURSES</span>
-              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
 
             <div class="element">
-              <img src="resources/img/course-design.jpg" alt="person using a camera">
+              <img class="hidden-xs" src="resources/img/course-design.jpg" alt="person using a camera">
               <h3>Design</h3>
-              <span>COURSES</span>
-              <p>User Experience Designer, User Research, Visual Design</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">User Experience Designer, User Research, Visual Design</p>
             </div>
 
             <div class="element">
-              <img src="resources/img/course-data.jpg" alt="laptop showing graphs">
+              <img class="hidden-xs" src="resources/img/course-data.jpg" alt="laptop showing graphs">
               <h3>Data</h3>
-              <span>COURSES</span>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">Data Science, Big Data, SQL, Data Visualization</p>
             </div>
 
             <div class="element">
-              <img src="resources/img/course-business.jpg" alt="chessboard pieces">
+              <img class="hidden-xs" src="resources/img/course-business.jpg" alt="chessboard pieces">
               <h3>Business</h3>
-              <span>COURSES</span>
-              <p>Product Development, Business Development, Startup</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">Product Development, Business Development, Startup</p>
             </div>
 
             <div class="element">
-              <img src="resources/img/course-marketing.jpg" alt="digital wristwatch being used">
+              <img class="hidden-xs" src="resources/img/course-marketing.jpg" alt="digital wristwatch being used">
               <h3>Marketing</h3>
-              <span>COURSES</span>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
+              <span class="hidden-xs">COURSES</span>
+              <p class="hidden-xs">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </div>
         </div>
+      </div>
 
 
 
@@ -166,12 +167,65 @@
 
 
 
-      <div id="thesis">
+      <div id="thesis" class="sixty-left-forty-right">
+        <div class="container-fluid zerofy">
+          <div class="row">
+            <div class="col-md-12 zerofy">
+              <h1>Thesis exhibit</h1>
+            </div>
+          </div>
+
+          <div class="row zerofy sectionpad">
+            <!-- Left side of page -->
+            <div class="col-md-7 zerofy">
+              <video width="100%" height="auto" autoplay repeat>
+                <source src="resources/vid/thesis.mp4" type="video/mp4">
+              </video>
+              <div class="hidden-xs">
+                <h2>Reimagine urban</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut auctor nibh. Ut lacus mauris, sodales sit amet ullamcorper non, ultricies vitae dolor.</p>
+              </div>
+            </div>
+
+
+            <!-- Right side of the page -->
+            <div class="col-md-5 zerofy flex-col">
+
+              <aside class="flex-row hidden-xs">
+                <img src="resources/img/thesis-fisma.jpg" alt="workdesk">
+                <div class="flex-col">
+                  <div>
+                    <h3>Fisma: Design and stuff</h3>
+                    <p>Designer showcase of new prototype product</p>
+                  </div>
+                </div>
+              </aside>
+
+              <aside class="flex-row hidden-xs">
+                <img src="resources/img/thesis-now-and-then.jpg" alt="new york skyscraper">
+                <div class="flex-col">
+                  <div>
+                    <h3>Now and then</h3>
+                    <p>Research study about New York</p>
+                  </div>
+                </div>
+              </aside>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex-row zerofy sectionpad">
+      <span>&copy; 2016 Colmar Academy. All rights reserved.</span>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
     </footer>
   </body>
 </html>

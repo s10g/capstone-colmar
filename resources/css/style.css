@@ -59,6 +59,11 @@ h3 {
     height: 500px;
 }
 
+.icon-login {
+    background-image: url("../img/ic-login.svg");
+    min-height: 10px;
+}
+
 .padding-left-24 {
     padding-left: 24px;
 }
@@ -86,20 +91,6 @@ h3 {
     flex-flow: column-reverse;
 }
 
-.basic-flexbox-spacearound {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.basic-flexbox-spacebetween {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .zerofy {
     margin: 0px;
     padding: 0px;
@@ -108,15 +99,6 @@ h3 {
 .sectionpad {
     padding: 32px 24px;
 }
-
-.rightside-element img {
-    display: inline-block;
-}
-
-.rightside-element div {
-    display: inline-block;
-}
-
 
 
 /* Header and menu */
@@ -134,13 +116,19 @@ header .flex-row {
     align-items: center;
 }
 
+.menu-icon {
+    display: none;
+}
+
 header span:nth-child(2) {
+    font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     color: #54414e;
 }
 
 header span:nth-child(3) {
+    font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     color: #a790a5;
@@ -183,55 +171,70 @@ nav a:last-child:hover {
     justify-content: space-between;
 }
 
-.banner-text-2 {
+.banner-text>div {
     margin: auto auto;
     padding-left: 40px;
+}
+
+.banner-text h1,
+.banner-text h3, 
+.banner-text a {
+    margin: 36px 0px;
+    text-decoration: none;
 }
 
 
 
 .start-here {
+    display: block;
     width: auto;
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 2rem;
     background-color: #54414e;
+    border: 2px solid #54414e;
     color: #b7c8b5;
     text-align: center;
+    text-decoration: none;
+}
+
+.start-here:hover {
+    background-color: #b7c8b5;
+    color: #54414e;
 }
 
 
-/* Main content: about */
-#about {
+/* Main content: #about */
+.sixty-left-forty-right {
     background-color: #c5ebc3; 
 }
 
-#about aside {
+.sixty-left-forty-right aside {
     _border: 1px solid black;
     padding: 16px;
     margin-left: 24px;
     min-width: 500px;
 }
 
-#about aside div {
+.sixty-left-forty-right aside div {
     justify-content: space-around;
     margin-left: 30px;
 }
 
 
-/* Main content: start */
-#start {
+/* Main content: #start-learning */
+#start-learning {
     background-color: #b7c8b5;
 }
 
-#start .col-md-12>h1 {
+#start-learning .col-md-12>h1 {
     text-align: center;
     color: #54414e;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-#start .flex-row {
+#start-learning .flex-row {
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -239,10 +242,11 @@ nav a:last-child:hover {
 .element {
     background-color: #54414e;
     color: #c5ebc3;
-    width: 565px;
-    height: 500px;
-    margin: 64px;
+    min-width: 565px;
+    _height: 500px;
+    margin: 16px;
     padding: 16px 16px 24px 16px;
+    flex: 0 1;
 }
 
 .element h3,
@@ -250,3 +254,41 @@ nav a:last-child:hover {
 .element p {
     margin: 16px 0px;
 }
+
+
+/* Main content: #thesis */
+/* Styled with re-usable class: .sixty-left-forty-right */
+
+#thesis .col-md-12>h1 {
+    text-align: center;
+    color: #54414e;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#thesis div div.row.zerofy.sectionpad div.col-md-5.zerofy.flex-col {
+    justify-content: space-around;
+}
+
+/* Footer */
+footer {
+    background-color: #b7c8b5;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .element {
+        width: 100%;
+        margin: 8px auto;
+    }
+}    
+
+
